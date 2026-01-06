@@ -1,0 +1,8 @@
+{
+  "name": "openfl-modular-sample",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "haxe-modular": "^0.14.0"
+  }
+}

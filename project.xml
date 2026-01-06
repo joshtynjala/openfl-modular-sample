@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="OpenFL with haxe-modular" package="com.feathersui.samples.OpenFLModular" version="1.0.0" company="Bowler Hat LLC"/>
+	<app main="Main" file="openfl-modular"/>
+
+	<window fps="60"/>
+	<window fps="0" if="html5"/>
+
+	<source path="src"/>
+	
+	<haxelib name="openfl"/>
+	<haxelib name="modular"/>
+</project>

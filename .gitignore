@@ -1,0 +1,13 @@
+*.hxproj
+
+.vscode/
+*.code-workspace
+
+bin/
+.temp/
+
+.DS_Store
+Thumbs.db
+
+package-lock.json
+node_modules/

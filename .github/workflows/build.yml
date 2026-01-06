@@ -1,0 +1,23 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: krdlab/setup-haxe@v1
+      with:
+        haxe-version: 4.3.6
+    - name: Set up Haxelib dependencies
+      run: |
+        haxelib install modular --quiet
+        haxelib install lime --quiet
+        haxelib install openfl --quiet
+    - name: Build html5 target
+      run: haxelib run lime build html5 -debug

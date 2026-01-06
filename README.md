@@ -4,8 +4,6 @@ Compiles an [OpenFL](https://openfl.org/) project using the [haxe-modular](https
 
 haxe-modular modifies the behavior of the Haxe compiler to split the generated JavaScript into separate modules when the `Bundle.load()` method is used.
 
-Sample created by [Josh Tynjala](https://twitter.com/joshtynjala), the author of [Feathers UI](https://feathersui.com/).
-
 ## Usage
 
 Add the [modular](https://lib.haxe.org/p/modular) Haxelib to your _project.xml_ file:

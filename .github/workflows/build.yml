@@ -19,5 +19,7 @@ jobs:
         haxelib install modular --quiet
         haxelib install lime --quiet
         haxelib install openfl --quiet
+    - name: Set up npm dependencies
+      run: npm install
     - name: Build html5 target
       run: haxelib run lime build html5 -debug
